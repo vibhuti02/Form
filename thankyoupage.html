@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/JavaScript">
+	function getImage(){
+		var url = new URL(window.location.href);
+		var selectedImage = url.searchParams.get("path");
+		document.getElementById("selectedImage").src=selectedImage;
+	}
+</script>
+	<title>Thank You</title>
+	<body onload="getImage()">
+		<h1>Thank You </h1><br>
+		<img id="selectedImage"  width="300" height="300">
+	</body>
+</head>
+<body>
+
+</body>
+</html>
