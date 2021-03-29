@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>  
+<html lang="en"><head>  
+<meta charset="utf-8">  
+<title>New user Registration</title>  
+<script src="validation.js"></script>  
+</head>  
+<body onload="document.registration.userid.focus();">  
+<h1>Registration Form</h1>  
+<form name='registration' onSubmit="return formValidation();">  
+<ul>  
+Name:<br><input type="text" name="userid" maxlength="12"/><br> 
+Password:<br><input type="password" name="passid" maxlength="12"/><br>
+State:<br><select name="state">  
+<option selected="" value="Default">(Please select a country)</option>  
+<option value="AF">Maharashtra</option>  
+<option value="AL">Goa</option>  
+<option value="DZ">Gujarat</option>  
+<option value="AS">Andhra Pradesh</option>  
+<option value="AD">Delhi</option>  
+</select><br>  
+ZIP Code:<br><input type="text" name="zip" /><br>
+Email:<br><input type="text" name="email" maxlength="50" /><br>
+Sex:<br><select name="sex">  
+<option selected="" value="Select">(Select)</option>  
+<option value="AF">Male</option>  
+<option value="AL">Female</option>
+<input type="submit" name="submit" value="Submit" />
+</ul>  
+</form>  
+</body>  
+</html>
